@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @chicken.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_chicken_path(@chicken) %> |
+<%= link_to 'Back', chickens_path %>

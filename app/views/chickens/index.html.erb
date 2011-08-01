@@ -1,0 +1,23 @@
+<h1>Listing chickens</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @chickens.each do |chicken| %>
+  <tr>
+    <td><%= chicken.name %></td>
+    <td><%= link_to 'Show', chicken %></td>
+    <td><%= link_to 'Edit', edit_chicken_path(chicken) %></td>
+    <td><%= link_to 'Destroy', chicken, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Chicken', new_chicken_path %>
