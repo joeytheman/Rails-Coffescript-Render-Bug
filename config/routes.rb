@@ -1,4 +1,5 @@
 Chickens::Application.routes.draw do
+  root :to => "chickens#index"
   resources :chickens
 
   # The priority is based upon order of creation:
