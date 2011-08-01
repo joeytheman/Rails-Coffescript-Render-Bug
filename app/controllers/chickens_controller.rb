@@ -49,6 +49,7 @@ class ChickensController < ApplicationController
       else
         format.html { render action: "new" }
         format.json { render json: @chicken.errors, status: :unprocessable_entity }
+        format.js {render action: "new"}
       end
     end
   end
